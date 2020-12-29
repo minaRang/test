@@ -23,3 +23,4 @@ def move(x,y,turn,count):
         move(prex,prey,turn,count)
 
 print(move(X,Y,D,1))
+#count 관련 오류 있
