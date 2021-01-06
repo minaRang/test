@@ -1,0 +1,1 @@
+#입력받음print("화폐의 종류와 원하는 가치의 합 입력: ",end='');n,m=map(int,input().split())ms=[]for _ in range(n):    ms.append(int(input("화폐의 단위:")))#최소 개수 저장할 리스트l=[99999]*10001for i in ms:    l[i]=1    for j in range(i+1,m+1):        l[j]=min(l[j-i]+1, l[j])if l[m]==99999:    print("만들 방법이 없음")else:    print("가치의 합을 만족하는 화폐들의 최소 개수: ",l[m])
