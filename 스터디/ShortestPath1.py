@@ -12,7 +12,7 @@ for k in range(N+1):
             connections[i][j]=min(connections[i][j],connections[i][k]+connections[k][j])
             connections[j][i]=connections[i][j]
 cost=connections[1][K]+connections[K][X]
-if cost==654321*2:
+if cost>=654321:
     print(-1)
 else:
     print(cost)
