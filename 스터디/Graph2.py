@@ -1,7 +1,7 @@
 N,M=map(int,input().split())
 parent=list(range(N+1))
 edges=[]
-result=0
+result=[]
 for _ in range(M):
     a,b,c=map(int,input().split())
     edges.append((c,(a,b)))
@@ -36,7 +36,7 @@ for edge in edges:
     a,b=edge[1]
     if not check(a,b):
         union(a,b)
-        result+=cost
+        result.append(cost)
 
-print(result)
+print(sum(result)-max(result))
 #어떻게 2개로....?
