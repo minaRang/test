@@ -39,4 +39,3 @@ for edge in edges:
         result.append(cost)
 
 print(sum(result)-max(result))
-#어떻게 2개로....?

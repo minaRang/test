@@ -7,4 +7,4 @@ for i in range(N+1):
         memo[i]=3
     else:
         memo[i]=memo[i-1]+memo[i-2]*2
-print(memo)
+print(memo[N]])

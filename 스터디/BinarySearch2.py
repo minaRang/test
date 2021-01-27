@@ -10,7 +10,7 @@ def test(arr,target,start,end):
     for i in range(3):
         if getsum(est[i],arr)==target:
             return est[i]
-        if i!=2 and getsum(est[i+1],arr)<target<getsum(est[i],arr):
+        if i!=2 and getsum(est[+1i],arr)<target<getsum(est[i],arr):
             return est[i]
     if target<getsum(est[i],arr):
         test(arr,target,0,mid)
@@ -25,6 +25,7 @@ def getsum(v,arr):
    return result
 
 print(test(lens,M,0,N))
+
 '''
 start=0
 end=max(long)
