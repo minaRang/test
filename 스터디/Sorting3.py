@@ -9,3 +9,4 @@ for i in range(K):
         arr1[i],arr2[i]=arr2[i],arr1[i]
 
 print(sum(arr1))
+

@@ -20,3 +20,4 @@ for i in range(N):
         if judge(i,j):
             count+=1
 print(count)
+

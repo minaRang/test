@@ -22,5 +22,4 @@ for move in plan:
             pass
         else:
             pos[0]+=1
-            
 print(pos[0], pos[1])
